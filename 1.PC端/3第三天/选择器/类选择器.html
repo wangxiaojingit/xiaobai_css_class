@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{background-color:orangered}
+        .div1,p{
+            background-color: blueviolet;
+        }
+        [title],p{
+            background-color: aqua;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="div1" title="1" >我是div</div>
+<div>我是div</div>
+<h1 class="div1">我是h1</h1>
+<h2 class="div1">我是h1</h2>
+<p class="p1 p2">我是p12</p>
+<p class="p3">我是3p</p>
+</body>
+</html>
+一、类选择器（权重10）:
+将html元素的class属性名，当做一个选择器使用，需要早在这个属性值之前加一个“.”
+一个html元素，可以有多个属性值（可以有多个类名），每个类名用空格隔开，类名可以重复使用
+给选择器命名不能以数字开头

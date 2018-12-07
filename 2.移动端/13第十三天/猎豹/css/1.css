@@ -1,0 +1,163 @@
+
+.wrap{
+    width: 100%;
+    /*height: 89px;*/
+    background-color: rgba(0,0,0,0.2);
+    float: left;
+
+}
+
+/*header*/
+.header{
+  width: 960px;
+    margin: 0 auto;
+}
+.header .logo{
+    float: left;
+    width: 270px;
+    height: 51px;
+    margin-top: 19px;
+}
+.header .logo img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.header .nav{
+    float: right;
+    line-height: 89px;
+}
+.header .nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+
+/*banner*/
+.banner .bg1{
+    width: 100%;
+    height:580px;
+    z-index: -1;
+    padding-top: 115px;
+    background-color: #ff6900;
+}
+.banner .bg1 .img1{
+    display: block;
+    margin:0 auto;
+    width:952px;
+    height:352px;
+}
+.banner .bg1 .img2{
+    display: block;
+    margin: auto;
+}
+.banner .bg2{
+    width: 100%;
+    height:580px;
+    z-index: -1;
+    background-color: #193d85;
+    font-size: 0;
+}
+.banner .bg2 .img1{
+    display: inline-block;
+    width:668px;
+    height:582px;
+}
+.banner .bg2 .img2{
+
+
+}
+
+
+
+
+
+/*more*/
+.more{
+    width: 960px;
+    margin: 0 auto;
+}
+ .more p{
+     color: red;
+     font-size: 20px;
+     line-height: 35px;
+ }
+.more .icon{
+    display: inline-block;
+    width: 16px;
+    height: 13px;
+    background-image: url("../images/back.png");
+    background-position: 0 -228px;
+    vertical-align: middle;
+}
+.more li{
+    float: left;
+    width: 33.33%;
+    list-style: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.more li a{
+    display: block;
+    text-decoration: none;
+    color: #0e0e12;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:760px) {
+    .header .nav{
+        display: none;
+    }
+    .header{
+        height: 46px;
+    }
+    .header img{
+        width: 48px;
+        height: 28px;
+        margin: 9px 0 9px 10px;
+    }
+    .banner img{
+        width: 297px;
+        height: 110px;
+    }
+}
+@media screen and (max-width:760px){
+    .more{
+        width: 100%;
+    }
+    .more li{
+        width: 100%;
+        /*-webkit-box-sizing: border-box;*/
+        /*box-sizing: border-box;*/
+    }
+    .more li:nth-child(9){
+        display: none;
+    }
+    .more li:nth-child(8){
+        display: none;
+    }
+    .more li:nth-child(7){
+        display: none;
+    }
+    .more li:nth-child(6){
+        display: none;
+    }
+}
+
+
+
+
+
+

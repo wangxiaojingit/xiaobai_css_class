@@ -1,0 +1,106 @@
+.all{
+    width: 595px;
+    background-color: honeydew;
+    margin: 0 auto;
+    }
+body,header,h1,h2,h3,h4,h5,h6,.all p,ul,li,.p1,.f,.u,.f1,.g1,.g2,.p2,.p3,.p0.a1,.a2,.a3,.a2 img,footer,body img,.a2 p,.a3 .c li{
+    padding:0;
+    margin:0;
+}
+h1 img{
+    width: 120px;
+    padding-top: 6px;
+    padding-left: 9px;
+}
+h1 img{float: left}
+h6 img{
+    width:190px;
+    margin-left:260px;
+    margin-top: 6px;
+    }
+.d p{
+    margin:12px auto;
+    text-align: center;
+}
+.p1{
+    font-size: 24px;
+    color: #e27027;
+    font-family: 微软雅黑;
+}
+.p2{ font-size: 30px;
+    color: red;
+    font-family: 微软雅黑;
+}
+.p3 img{
+    width: 70%;
+    height: 70%;
+}
+.p0{
+    border: 1px solid royalblue;
+}
+ul{
+    list-style: none;
+}
+.h2 li{
+
+    font-size: 14px;
+    font-family: 微软雅黑;
+    line-height: 23px;
+}
+span{
+    color: #e27027 ;
+}
+i{
+    font-family: "Calibri Light";
+}
+h2 img,h3 img,h4 img{
+    vertical-align: middle;
+    width: 5%;
+    height: 5%;
+}
+h2,h3,h4{
+    font-size: 18px;
+    margin-top: 19px;
+    margin-bottom: 13px;
+}
+.a1,.a2,.a3{
+    margin-left: 9px;
+}
+.a2 li img{
+    width: 57px;
+    margin-right: 28px;
+    margin-left: 28px;
+}
+.a2 li{
+    display: inline-block;
+    text-align: center;
+}
+.a2 li p{
+    font-size: 10px;
+}
+h5{
+    font-size: 16px;
+    color: #e27027 ;
+    text-align: center;
+}
+.a3 .c{
+    display: inline-block;
+    background-color: white;
+    border: 1px solid lavender;
+    width: 180px;
+}
+.c h5{text-align: center;}
+.f img{
+    width: 50px;
+}
+.f .u{display: inline-block;}
+.f ul li{display: inline-block}
+.f .g3{
+    width: 190px;
+    margin-left: 9px;
+    }
+.u{
+    margin-left:160px;
+    margin-top: 20px;
+}
+

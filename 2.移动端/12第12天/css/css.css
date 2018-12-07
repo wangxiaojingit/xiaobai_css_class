@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    width: 100%;
+    height: 89px;
+    background-color: rgba(0,0,0,0.2);
+}
+/*header*/
+.header{
+  width: 960px;
+    margin: 0 auto;
+}
+.header .logo{
+    float: left;
+    width: 270px;
+    height: 51px;
+    margin-top: 19px;
+}
+.header .logo img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.header .nav{
+    float: right;
+    line-height: 89px;
+}
+.header .nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 30px;
+}
+@media screen and (max-width:760px) {
+    .header .nav{
+        display: none;
+    }
+    .header{
+        height: 46px;
+    }
+    .header img{
+        width: 48px;
+        height: 28px;
+        margin: 9px 0 9px 10px;
+    }
+}
+
+/*more*/
+ .more p{
+     color: red;
+     font-size: 20px;
+ }
+.more .icon{
+    width: 16px;
+    height: 13px;
+    background-image: url("back.");
+}
+
+
+
+
+
+
+
+
+

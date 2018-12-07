@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="1.css" type="text/css">
+    <style>
+        div,p,ul,ol{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+        div,p{background-color:yellow }
+    </style>
+</head>
+<body>
+
+<div style="background-color: aqua">我是div</div>
+<p></p>
+<ul></ul>
+<ol></ol>
+</body>
+</html>
+一、css的作用：
+给html文件添加静态或者动态的样式
+
+二、css和html如何融合到一起（html引入css的四种方式)
+1.行内式
+2.内嵌式
+3.外联式：将css代码单独放在一个css文件中，再通过link标签将这个css文件引入到html文件中，一般写在head元素内
+4.导入式：
+
+三、四种元素的权重
+1.一个html元素最终加载的css样式是谁，谁的权重最大
+2.有行内的就选择行内的
+3、在css选择器相同的情况下，谁最后加载就听谁的

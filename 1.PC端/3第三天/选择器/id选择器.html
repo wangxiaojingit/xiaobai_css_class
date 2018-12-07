@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            color:orangered;
+        }
+    </style>
+</head>
+<body>
+<div class="div1 div2">我是一个id选择器</div>
+<div id="div1 div2">我是一个id选择器</div>
+<!--一个html元素，id属性值只能有一个上面这个识别不了，class属性值可以多个类名-->
+<div id="div1">我是一个id选择器</div>
+<!--<h1 id="div1">错误的，不识别</h1> id属性值只能用一次，与上面的div1重复-->
+<h2 id="div2">这个是可以的</h2>
+<!---->
+</body>
+</html>
+.id选择器（权重100）：
+将html元素的id属性名，当做选择器来使用，需要在这个属性值前面加一个“#”
+一个html元素，id属性值只能用一次，id在html具有唯一性
+在JS文件中， 一个html只能用一个id的属性值
+   在给html页面加css样式的时候，id的属性值可以重复，但是在JS中不可以
+   一般我们写id属性名的时候，在JS中常用

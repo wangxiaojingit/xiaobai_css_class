@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1>ol>li{
+            width:100px;height: 100px;background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <ul>
+        <li>我是li</li>
+    </ul>
+
+    <ol>
+        <li>我是li</li>
+    </ol>
+</div>
+<div class="div2">
+    <ul>
+        <li>我是li</li>
+    </ul>
+
+    <ol>
+        <li>我是li</li>
+    </ol>
+</div>
+</body>
+</html>
+##### 子级选择器
+存在包含关系的元素选择，通过父级确定选择子级
+语法： 父级选择器>子级选择器
+父级选择器是用准确查找范围
+子级选择器才是我们要添加的样式
+权重：所有选择器之和
+> 子级选择器必须是紧邻的父子关系

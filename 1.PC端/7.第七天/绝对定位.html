@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*.box1{width:200px;height: 300px;background-color: red;position: absolute;left:30px;}
+        !*绝对定位*!
+        .div1{height: 200px;background-color: yellow;}*/
+    </style>
+</head>
+<body>
+<!--不设置参照物的时候-->
+<div class="box1"></div>
+<div class="div1"></div>
+<!--设置参照物的时候-->
+
+<!--<div style="position: relative;">
+    <p style="position: absolute;">
+        <span style="position: absolute;"></span>
+        <span style="position: absolute;"></span>
+    </p>
+</div>-->
+
+<!--<div style="position: relative;background-color: yellow;">
+    <p style="background-color: pink;display: inline-block;">我是一个普通的文本</p>
+    <span style="position: absolute;background-color: red;">我是span标签</span>
+</div>-->
+<!--<style>
+    div{width:100px;height: 100px;background-color: rebeccapurple;position:absolute;left:20px;right:20px;top:10px;bottom:20px;}
+</style>
+<div></div>-->
+<style>
+    ul{list-style: none;}
+    li{background-color: yellow;float: left;margin-right:30px;position: relative;}
+    div{position: absolute;background-color: red;left:-20px;right:-20px;/*width: 100%;*/}
+</style>
+<ul>
+    <li>
+        <span>撑起li的宽度</span>
+        <div>内容<br>内容</div>
+    </li>
+    <li>
+        <span>撑起li的宽度</span>
+        <div>内容<br>内容</div>
+    </li>
+    <li>
+        <span>撑起li的宽度</span>
+        <div>内容<br>内容</div>
+    </li>
+</ul>
+
+</body>
+</html>

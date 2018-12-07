@@ -1,0 +1,45 @@
+.all{
+    width: 1200px;
+    background-color: darksalmon;
+    margin: 0 auto;
+    font-family: 微软雅黑;
+    font-size: 0;
+}
+body,.d,p,ul,.d{
+    margin: 0;
+    padding: 0;
+}
+ul{margin-left: -65px;}
+li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 65px;
+}
+.all .d{
+    background-image: url("../img/2.jpg");
+    width: 221px;
+    height: 112px;
+}
+.d{
+    padding: 0 14px 0 16px;
+}
+.d p{
+    font-size: 14px;
+    line-height: 22px;
+}
+ .p1{
+    padding-top: 18px;
+}
+span{
+    font-size: 12px;
+}
+.s1{
+    color: #c71b1b;
+}
+.s2{
+    color: #868484;
+    padding-left: 80px;
+}
+.f{
+    padding-top: 24px;
+}

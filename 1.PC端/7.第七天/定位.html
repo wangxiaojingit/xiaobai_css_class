@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+        ul:after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+        ul{list-style: none;}
+        li{
+            width: 100px;
+            height: 100px;
+            border: 1px dashed rosybrown;
+            position: relative;
+            float: left;
+        }
+        .li2{
+            left: 20px;
+            top: -30px;
+        }
+        div{width: 100px;
+            height: 100px;
+            background: royalblue;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>11111111</li>
+    <li class="li2">222222</li>
+    <li>3333333</li>
+    <li>4444444444</li>
+</ul>
+<div></div>
+</body>
+</html>

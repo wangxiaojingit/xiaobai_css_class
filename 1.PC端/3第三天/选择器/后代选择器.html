@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*最好不要用，因为消耗性能*/
+        .div1>ul>li>p{}
+        .div1 ul p{}
+    </style>
+</head>
+<body>
+<div class="div1">
+    <ul>
+        <li>
+            <p></p>
+        </li>
+    </ul>
+    <ol>
+        <li>
+            <p></p>
+        </li>
+    </ol>
+</div>
+</body>
+</html>
+#####后代选择器(派生选择器)
+在一个根元素的范围内，查找到它的后代元素
+权重：所有选择器之和
+语法：祖辈选择器 要查找的后代选择器{}
+> 用空格连接
+> 后代选择器在使用的时候，尽量控制在三个左右

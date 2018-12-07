@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--meta:vp tab-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <style type="text/css">
+        /*pc*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none
+        }
+
+        .main {
+            width: 1204px;
+            margin: 0 auto;
+        }
+
+        .left {
+            float: left;
+            width: 660px;
+        }
+
+        .left li {
+            float: left;
+            width: 200px;
+            margin: 0 20px 20px 0
+        }
+
+        .left li img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .sidebar {
+            float: right;
+            width: 500px;
+            height: 350px;
+            background: #000
+        }
+
+        /*h5 媒体查询 控制的样式是为了覆盖pc写的默认样式 重点覆盖的是写死宽度的样式*/
+        @media screen and (max-width:1024px) {
+            /*移动端 流式布局 百分比布局*/
+            /*在移动端侧边栏直接隐藏掉 pc写死的宽度在移动端变成活的宽度 用百分比去表示宽度*/
+            .sidebar {
+                display: none
+            }
+
+            .main {
+                width: 100%;
+            }
+
+            .left {
+                width: 100%;
+                padding:0 20px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            .left ul{
+                margin-left:-20px;
+            }
+
+            /*把pc給li加的右外间距覆盖掉 改为左内边距 因为在移动端怪异盒模型box-sizing属性只包含padding和border
+            :first-child  第一个子元素
+            :last-child   最后一个子元素
+            :nth-child(n) 第几个子元素
+            2n+1 奇数行
+            2n   偶数行
+            */
+            .left li {
+                width: 50%;
+                margin-right: 0;
+                padding-left: 20px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            .left li:nth-child(6){
+                display:none;
+            }
+            .left li:nth-child(5){
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="left">
+        <ul>
+            <li>
+                <a href="#"><img src="images/pic4.jpg" alt=""/></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/pic4.jpg" alt=""/></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/pic4.jpg" alt=""/></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/pic4.jpg" alt=""/></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/pic4.jpg" alt=""/></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/pic4.jpg" alt=""/></a>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar"></div>
+</div>
+</body>
+</html>

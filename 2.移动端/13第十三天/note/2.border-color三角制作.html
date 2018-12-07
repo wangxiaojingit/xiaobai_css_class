@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>border-color制作小三角</title>
+    <style type="text/css">
+        /*      border:1px solid #000;
+                border-width 边框的宽度
+                border-style 边框的类型
+                border-color 边框的颜色
+                transparent 透明
+                */
+        .box {
+            width: 0;
+            height: 0;
+            border-width: 100px;
+            border-style: solid;
+            border-color: forestgreen transparent transparent transparent;
+        }
+
+        .box1 {
+            width: 0;
+            height: 0;
+            border-width: 100px;
+            border-style: solid;
+            border-color: transparent transparent darkblue transparent;
+        }
+
+        .box2 {
+            width: 0;
+            height: 0;
+            border-width: 100px;
+            border-style: solid;
+            border-color: transparent transparent transparent red;
+        }
+        .box3 {
+            width: 0;
+            height: 0;
+            border-width: 100px;
+            border-style: solid;
+            border-color: transparent blue transparent transparent;
+        }
+        .box4 {
+            width: 0;
+            height: 0;
+            border-width: 100px;
+            border-style: solid;
+            border-color: darkgreen blue teal #a2503a;
+        }
+        .arrow{
+            width:100px;
+            height:100px;
+            margin:50px auto;
+            border-top:10px solid #000;
+            /*border-bottom:10px solid #000;*/
+            border-left:10px solid #000;
+            /*border-right:10px solid #000;*/
+            /*transform 变换 转换
+            rotate(deg) 旋转 循环 deg 角度单位
+            */
+            -webkit-transform:rotate(45deg);
+            transform:rotate(45deg);
+        }
+        .arrow1{
+            width:100px;
+            height:100px;
+            margin:50px auto;
+            border-top:10px solid #000;
+            border-left:10px solid #000;
+            -webkit-transform:rotate(-135deg);
+            transform:rotate(-135deg);
+        }
+    </style>
+</head>
+<body>
+<!-- ***** 面试题：
+实心小三角:
+原理：实心小三角,首先做成实心的正方形,由border-width来控制小三角的大小,border-color来控制小三角的方向(width:0;height:0;)
+
+空心小三角:
+原理：空心小三角,首先做成空心的正方形,由元素的大小来控制小三角的大小,
+transform:rotate(角度)来控制方向,小三角的宽度是由border-width来控制-->
+
+<div class="arrow"></div>
+<div class="arrow1"></div>
+<div class="box"></div>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+<div class="box5"></div>
+</body>
+</html>

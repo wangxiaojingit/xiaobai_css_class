@@ -1,0 +1,218 @@
+/*header*/
+html {
+    font-size: 50px;
+}
+body{
+    background:#f8f8f8;
+}
+header {
+    position:relative;
+    height: 1.12rem;
+    background: #2a2a2a;
+}
+
+header .logo {
+    float:left;
+    width: 2.1rem;
+    height: .62rem;
+    /*margin-top:.25rem;*/
+    /*margin-left:.16rem;*/
+    margin:.25rem 0 0 .16rem;
+}
+
+header .logo img {
+    display: block;
+    width:100%;
+    height:100%;
+}
+header .menu{
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto 0;
+    right:.23rem;
+    height:.3rem;
+}
+header span{
+    display:block;
+    width:.36rem;
+    height:.06rem;
+    margin:.03rem 0;
+    background:#fff;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+
+
+/*focus*/
+.focus{
+    position:relative;
+}
+.slide{
+    display:none;
+}
+/*交集选择器 提高权重*/
+.slide.slide-current{
+    display:block;
+}
+.slide img{
+    display:block;
+    width:100%;
+}
+.dot{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:.15rem;
+    font-size:0;
+    text-align:center;
+}
+.dot li{
+    display: inline-block;
+    width:.16rem;
+    height:.16rem;
+    margin:0 .03rem;
+    background:#fff;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+}
+
+
+/*main*/
+.title{
+    height:.99rem;
+    line-height:.99rem;
+    font-size:.26rem;
+    color:#4c4b4b;
+}
+.title .icon-book{
+    display:inline-block;
+    width:.29rem;
+    height:.35rem;
+    margin-right:.13rem;
+    background:url("../images/pic4.png") no-repeat;              -webkit-background-size:cover;
+    background-size:cover;
+    vertical-align: middle;
+}
+.main{
+    padding:0 .2rem;
+}
+.item{
+    margin-bottom:.25rem;
+    background:#fff;
+    -webkit-border-radius:0 0 5px 5px;
+    border-radius:0 0 5px 5px;
+    box-shadow:1px 5px 6px rgba(178,178,178,.75),-1px 5px 6px rgba(178,178,178,.75);
+}
+.item .pic img{
+    display:block;
+    width:100%;
+    -webkit-border-radius:5px 5px 0 0;
+    border-radius:5px 5px 0 0;
+}
+.item .info{
+    text-align:center;
+    padding-bottom:.32rem;
+}
+.item .info h2{
+    font-size:.28rem;
+    color:#777;
+    font-weight:normal;
+    height:.9rem;
+    line-height:.9rem;
+    padding:0 .1rem;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.item .info .price{
+    font-size:.28rem;
+    color:#ed3a3a;
+}
+
+/*floor*/
+.bottom-bar-pannel{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+}
+.floor-container{
+    height:1.06rem;
+    background:#fff;
+    border-top:1px solid #d5d5d5;
+    -webkit-box-shadow:0 -5px 10px rgba(0,0,0,.2);
+    box-shadow:0 -5px 10px rgba(0,0,0,.2);
+}
+.floor-container li{
+    float:left;
+    width:33.33%;
+    text-align:center;
+}
+.floor-container li a{
+    color:#ababab
+}
+.floor-container li.cur a{
+    color:#188ae4;
+}
+.floor-container li span{
+    display:block;
+    width:.46rem;
+    height:.39rem;
+    margin:.2rem auto 0;
+    background:url("../images/sprites.png") no-repeat;
+    -webkit-background-size:1.38rem .78rem;
+    background-size:1.38rem .78rem;
+}
+/*小图标的默认状态 灰色*/
+.floor-container li span.icon-home{
+    background-position:0 -.39rem;
+}
+.floor-container li span.icon-course{
+    background-position:-.46rem 0;
+}
+.floor-container li span.icon-user{
+    background-position:-.92rem 0;
+}
+/*小图标当前状态  蓝色*/
+.floor-container li.cur span.icon-home{
+    background-position:0 0;
+}
+.floor-container li.cur span.icon-course{
+    background-position:-.46rem -.39rem;
+}
+.floor-container li.cur span.icon-user{
+    background-position:-.92rem -.39rem;
+}
+.floor-container li em{
+    font-style:normal;
+    font-size:.16rem;
+    line-height:.36em;
+}
+
+
+
+/*iphone5的设计稿
+320  375 414*/
+/*50   ?    ?*/
+
+
+/*iphone6 plus的设计稿
+414       320   375
+33.33px    ?      ?*/
+
+@media screen and (min-width: 320px) {
+    html{
+        font-size:50px;
+    }
+}
+@media screen and (min-width:375px) {
+    html{
+        font-size:58.59375px;
+    }
+}
+@media screen and (min-width:414px) {
+   html{
+       font-size:64.6875px;
+   }
+}

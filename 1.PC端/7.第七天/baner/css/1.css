@@ -1,0 +1,73 @@
+.banner{
+    width: 1204px;
+    /*height: 360px;*/
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.banner .ban-img{
+    width: 4816px;
+}
+body,h1,h2,h3,h4,h5,h6,ul,ol,p,dl,td,dd,li,div{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{list-style: none}
+.banner:after{
+    display: block;
+    content: "";
+    clear:both;}
+.ban-img img{
+    float: left;
+}
+/*sub-banner左*/
+.sub-nav-hidden {
+    /*display: none;*/
+}
+
+.sub-nav-hidden{
+    /*display: none;*/
+    position: absolute;
+    /*left:240px;*/
+    /*top:0;*/
+    width:543px;
+    height: 360px;
+    background-image: url("../img/11_03.png");
+}
+.sub-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 360px;
+}
+.bg{
+    width: 240px;
+    height: 360px;
+    background-color: #020000;
+    opacity: 0.2;
+}
+.sub-nav a{
+    margin:0 auto;
+    width:170px;
+    height: 71px;
+    display: block;
+    line-height: 71px;
+    border-bottom:1px solid #f1f1f1\0;
+    *border-bottom:1px solid #f1f1f1;
+    border-bottom: 1px solid rgba(255,255,255,0.44);
+    font-size: 14px;
+    padding:0 9px 0 11px;
+    color: #fdfdfe;
+}
+i{
+    float: right;
+    background-image: url("../img/1.png");
+    width:7px;
+    height: 13px;
+    background-position: 0 -408px;
+    margin-top: 29px;
+}

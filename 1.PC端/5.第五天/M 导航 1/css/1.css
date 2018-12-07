@@ -1,0 +1,61 @@
+.ul{
+    list-style: none;
+}
+body,h1,ul,div,img,a{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: burlywood;
+    width: 1024px;
+    margin: 0 auto;
+}
+a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #2a2a2a;
+}
+a:hover{
+    color: #2b7dd1;
+}
+.header h1{
+    display: inline-block;
+    margin:16px 50px 16px 0;
+}
+.header .nav{
+    display: inline-block;
+    vertical-align: top;
+}
+ul{
+    margin-left: -40px;
+}
+.header .nav li{
+    display: inline-block;
+    height: 84px;
+    line-height: 84px;
+    margin-left:20px;
+}
+.header .right{
+    display: inline-block;
+    margin-left: 50px;
+    vertical-align: top;
+}
+.header .right .car{
+    display: inline-block;
+}
+.car{padding-right: 30px;}
+.right a{
+   padding-right: 30px;
+    height: 84px;
+    line-height: 84px;
+    color: #666767;
+    }
+i{
+    background-image: url("../img/2.png");
+    width: 24px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 7px;
+}
+.hh{display: none}

@@ -1,0 +1,72 @@
+body{
+    font-size: 0;
+}
+body, ul, p {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";/*字体*/
+}
+
+ul {
+    list-style: none;/*列表样式为空*/
+}
+
+.box1{
+    margin:0 auto;/*上下为0  左右居中*/
+    width:1200px;
+    /*background-color: red;!*背景颜色*!*/
+}
+.box1 ul{
+    margin-left:-65px;
+}
+.box1 li{
+    display: inline-block;
+    margin-left:65px;
+    /*margin-right:65px;*/
+}
+/*.box1 .text1{
+    margin-right:0;
+}*/
+.meta{
+    width:221px;
+    height: 112px;
+    background-image: url("../img/bg.jpg");/*背景图片*/
+    padding:0 14px 0 16px;/*内边距 上右下左*/
+    /*padding-right:14px;
+    padding-left:16px;*/
+}
+.meta p{
+    font-size: 14px;/*字体大小*/
+    line-height: 22px;/*行高*/
+    color: #1e1e1e;/*字体颜色*/
+}
+.meta .p1{
+    padding-top:18px;
+}
+.meta .p2{
+   padding-bottom: 24px;
+}
+.meta span{
+    font-size:12px;
+}
+.meta .rmb{
+    color: #c71b1b;
+}
+.meta .study{
+    color: #0e0e12;
+    padding-left:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

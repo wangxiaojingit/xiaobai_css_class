@@ -1,0 +1,26 @@
+body{background-color: #000000;
+    font-size: 14px;
+    color: white;
+}
+img{
+    border: 1px dashed white;
+    margin: 10px;
+}
+ .right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.h-right{
+    text-align: right;
+}
+h3{
+    text-decoration: underline;
+}
+span{
+    font-size: 30px;
+    color:yellow;
+    font-weight: bold;
+    float: left;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*div{}*/
+       /* div[title]{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }*//*交集选择器*/
+
+        .div1{
+            background-color: red;
+        }
+        div[class]{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--
+需求：给div元素加宽度,高度，背景颜色红色
+-->
+<div>1</div>
+<div class="div1 p1">2</div>
+<br>
+<div class="div1 ">3</div>
+<!--如果class有两个类名，不能div[class=div1]这样使用,div[class]这样可以-->
+<h1 class="div1">4</h1>
+</body>
+</html>

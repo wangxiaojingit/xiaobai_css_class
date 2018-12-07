@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background-color: #e27027;
+        }
+
+        @media screen and (max-width: 375px){
+            .box{
+                background-color: #000;
+                width: 200px;
+                height: 200px;
+            }
+        }
+        /*
+        小于等于375 max-width: 375px
+        大于等于375 min-width: 375px
+        ***单词之间加空格
+           1. @media 媒体，媒介*
+           2.screen 设备类型
+               all所有类型
+               print打印机
+           3. 连接符
+               and和
+               only 仅仅
+               not 排除
+           4.判断条件（）
+           5.{
+              css样式代码} 遵循css样式的就近原则，写在下面的代码会把上面的覆盖
+         */
+        .box:before{
+            display: block;
+            content: "我是文字内容";
+        }
+        /*iphone4*/
+   @media screen and (device-height: 480px) and(-webkit-device-pixel-ratio: 2.0){
+    .box:before{
+        content: "我是iphone4";
+    }
+}
+        /*iphone5*/
+        @media screen and (device-height: 568px) and(-webkit-device-pixel-ratio: 2.0){
+            .box:before{
+                content: "我是iphone5";
+            }
+        }
+        /*iphone6*/
+        @media screen and (device-width: 375px) and(-webkit-device-pixel-ratio: 2.0){
+            .box:before{
+                content: "我是iphone6";
+            }
+        }
+        /*iphone6 plus*/
+        @media screen and (device-width: 414px) and(-webkit-device-pixel-ratio: 3.0){
+            .box:before{
+                content: "我是iphone6 plus";
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

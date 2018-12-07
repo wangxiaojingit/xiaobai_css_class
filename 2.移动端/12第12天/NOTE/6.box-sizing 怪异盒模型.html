@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>box-sizing怪异的盒模型</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: deeppink;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        .box, .box1 {
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
+
+        /*方法一:border 控制间距*/
+        .box li {
+            float: left;
+            width: 33.33%;
+            height: 100px;
+            /*padding-left:10px;*/
+            border-right: 10px solid red;
+            background: #000;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            /*padding border  10px的边框值算在总的宽度50%里面*/
+        }
+
+        /*css3选择器  :nth-child(n) 第几个元素*/
+        .box li:nth-child(3) {
+            border: 0
+        }
+
+        /*方法二: padding 控制间距*/
+        .boxWrap {
+            padding: 0 10px;
+        }
+
+        .box1 {
+            margin-left: -10px;
+        }
+
+        .box1 li {
+            float: left;
+            width: 33.33%;
+            padding-left: 10px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .box1 li img {
+            display: block;
+            width: 100%;
+        }
+
+        /*   用css3选择器去解决  会存在一个问题 图片的尺寸会大于其他图片的尺寸
+            .box1 li:nth-child(1){
+                    padding:0
+                }*/
+    </style>
+
+</head>
+<body>
+<!--
+盒子模型  content(width/height) padding  border  margin
+
+div  真实width= width+padding-left+padding-right+border-left+border-right
+    真实height=height+padding-top+padding-bottom+border-top+border-bottom
+-->
+<ul class="box">
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<div class="boxWrap">
+    <ul class="box1">
+        <li><img src="images/pic4.jpg" alt=""/></li>
+        <li><img src="images/pic4.jpg" alt=""/></li>
+        <li><img src="images/pic4.jpg" alt=""/></li>
+    </ul>
+</div>
+</body>
+</html>

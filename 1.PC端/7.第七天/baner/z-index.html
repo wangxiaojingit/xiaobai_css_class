@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .child {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            top: 30px;
+        }
+        .div2 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box1 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="div1" style="z-index:2">
+    <div class="child" style="z-index:3"></div>
+</div>
+
+<div class="div2">
+    <div class="box1" style="z-index:4"></div>
+</div>
+
+
+</body>
+</html>

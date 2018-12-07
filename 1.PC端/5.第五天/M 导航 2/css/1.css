@@ -1,0 +1,62 @@
+.header{
+    width: 1204px;
+    background-color:darksalmon;
+    margin: 0 auto;
+}
+body,h1,.mav,.right,.car,.nav,ul,.nav li{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.header h1{
+    display: inline-block;
+    margin: 16px 85px 16px 0;
+}
+.header .nav{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -30px;
+}
+.header .nav li{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 84px;
+    height: 84px;
+    margin-left: 30px;
+}
+.nav a{color: #2a2a2a;}
+.header li a:hover{
+    color: #2b7dd1;
+    line-height: 84px;
+    height: 84px;
+
+}
+.header .right{
+    display: inline-block;
+    line-height: 84px;
+    height: 84px;
+    vertical-align: top;
+}
+.header .right .car{
+    display: inline-block;
+    margin-left: 45px;
+}
+.header a{text-decoration: none;}
+.header .right a{
+    font-size: 12px;
+    color:#666767 ;
+    margin-left: 35px;
+}
+.car i{
+    background-image: url("../img/icon.png");
+    width: 24px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.hh{
+    display: none;
+}

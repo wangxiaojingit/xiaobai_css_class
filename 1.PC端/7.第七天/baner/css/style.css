@@ -1,0 +1,454 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a, img,dl,dt,dd {
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft YaHei UI";
+}
+
+img {
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none; /*去掉下划线*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+.clearfix{
+    *zoom:1;
+}
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.header {
+    width: 1204px;
+    margin: 0 auto;
+    background: #f1f1f1;
+}
+
+.header h1 {
+    float: left; /*左浮动*/
+    margin: 16px 85px 16px 0; /*外边距 上右下左*/
+}
+
+.header .nav {
+    float: left;
+    height: 84px;
+    line-height: 84px;
+}
+
+.header .nav ul {
+    margin-left: -60px;
+}
+
+.header .nav li {
+    float: left;
+    font-size: 14px;
+    /*margin-right:60px;*/
+    margin-left: 60px;
+}
+
+/*.list5{
+    margin-right:0;
+}*/
+.header .nav a {
+    color: #2a2a2a;
+}
+
+.header .nav a:hover {
+    color: #2b7dd1;
+}
+
+.header .login {
+    float: right;
+}
+
+.login .car {
+    float: left;
+    margin-right: 39px;
+    font-size: 14px;
+    color: #666767;
+    cursor: pointer; /*鼠标经过有小手*/
+    height: 84px;
+    line-height: 84px;
+    position: relative; /*相对定位*/
+
+}
+
+.login .car .icon-bg {
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    background-image: url("../img/icon.png");
+    background-repeat: no-repeat; /*背景图片不平铺*/
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.login .car:hover .icon-bg {
+    background-position: -81px 0;
+}
+
+.login .car:hover .car-hover {
+    color: #2b7dd1;
+}
+
+.login .car:hover .list-car {
+    display: block;
+}
+
+/*.login .car:hover>span{  子级选择器
+    color: #2b7dd1;
+}*/
+.login .link1 {
+    color: #666767;
+    font-size: 14px;
+    padding-right: 35px;
+    line-height: 84px;
+}
+
+.header .list-car {
+    position: absolute; /*绝对定位*/
+    left: -150px;
+    top: 62px;
+    z-index:1;
+    display: none; /*隐藏*/
+    width: 320px;
+    padding: 0 14px;
+    *border: 1px solid #cccccc; /*只在IE7浏览器 识别这个属性*/
+    border: 1px solid #cccccc \0; /*只在IE8浏览器 识别这个属性*/
+    background-color: #ffffff;
+    box-shadow: 2px 2px 6px rgba(2, 2, 2, 0.34);
+}
+
+.list-car .car-top {
+    font-size: 16px;
+    color: #333333;
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-left: 9px;
+}
+
+.list-car .list-top {
+    font-size: 12px;
+    color: #7d7d7d;
+    float: right;
+}
+
+.list-car .car-p1 {
+    margin: 59px auto 0;
+    width: 68px;
+    height: 68px;
+    background-color: #9e9e9e;
+    border-radius: 50%; /*圆角*/
+    background-image: url("../img/icon.png");
+    background-repeat: no-repeat;
+    background-position: -149px 18px;
+
+}
+
+.list-car .car-p2 {
+    margin: 0 auto;
+    width: 189px;
+    height: 62px;
+    line-height: 62px;
+    font-size: 14px;
+    color: #414141;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center; /*水平居中 用这个属性的时候，必须是一个块级元素或者有宽度*/
+}
+
+.list-car .car-p3 {
+    font-size: 12px;
+    text-align: center;
+    height: 75px;
+    line-height: 75px;
+}
+
+.list-car .car-p3 a {
+    color: #4e91d7;
+}
+
+.car-bot {
+    margin-top: 24px;
+    border-top: 1px solid #e1e1e1;
+    line-height: 68px;
+}
+
+.car-bot .car-me {
+    font-size: 12px;
+    color: #7d7d7d;
+}
+
+.car-bot .shopping {
+    /*display: inline-block;*/
+    float: right;
+    width: 79px;
+    height: 39px;
+    margin-top: 15px;
+    background-color: #4e91d7;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.car-bot .shopping a {
+    /*display: inline-block;*/
+    float: right;
+    width: 79px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/*footer*/
+.footer-top{
+    width:100%;
+    background-color: #2e2e2e;
+    border-bottom: 2px solid #020202;
+}
+.footer-top .main{
+    width:1204px;
+    margin:0 auto;
+    padding-bottom:55px;
+}
+.footer-top .fot-left{
+    float: left;
+    margin-left:-70px;
+    margin-top: 47px;
+    /*margin:47px 0 0 -70px;*/
+}
+.footer-top .fot-left dl{
+    float: left;
+    margin-left:70px;
+}
+.fot-left dl dt{
+    font-size:16px;
+    color: #fefdfd;
+    line-height: 30px;
+    text-shadow: 2px 2px 0 rgba(2,2,2,1);
+    margin-bottom:16px;
+    text-align: center;
+}
+.fot-left dl dd{
+    font-size: 14px;
+    line-height: 30px;
+}
+.fot-left dl dd a{
+    color: #a3a3a3;
+    text-shadow: 2px 2px 0 rgba(2,2,2,1);
+}
+.main .fot-right{
+    float: right;
+    margin:63px 26px 0 0;
+}
+.main .fot-right h4{
+    width:200px;
+    height: 65px;
+
+}
+.main .fot-right h4 a{
+    display: inline-block;
+    width:200px;
+    height: 65px;
+    background: url("../img/icon.png") no-repeat;
+    background-position: 0 -81px;
+}
+.fot-icon{
+  /*  margin-top: 16px;
+    margin-left:-13px;*/
+    margin:16px 0 0 -13px;
+}
+.fot-icon li{
+    float: left;
+    margin-left:13px;
+    position: relative;/*相对定位*/
+    cursor: pointer;
+}
+.fot-icon li:hover .hidden-bot{
+    display: block;
+}
+.fot-icon .icon{
+    /*display: block;*/
+    float: left;
+    width:45px;
+    height: 45px;
+    background: url("../img/icon.png") no-repeat;
+}
+.fot-icon .weibo{
+    background-position: 0 -286px;
+
+}
+.fot-icon .weixin{
+    background-position: -88px -286px;
+}
+.fot-icon .iphone{
+    background-position: -190px -286px;
+}
+.fot-icon .android{
+    background-position: -297px -286px;
+}
+
+.fot-icon .hidden-bot{
+    position: absolute;
+    display: none;
+    left:-70px;
+    top:-210px;
+}
+.fot-icon .small{
+    position: absolute;
+    left:79px;
+    bottom:-8px;
+    width:23px;
+    height: 15px;
+    background: url("../img/icon.png") no-repeat;
+    background-position: -209px -213px;
+}
+.footer-bot{
+    width:100%;
+    background-color: #212121;
+    border-top:1px solid #5b5c5c;
+    padding:18px 0 19px 0;
+}
+.footer-bot p{
+    text-align: center;
+    font-size: 14px;
+    color: #a3a3a3;
+    line-height: 30px;
+}
+
+.footer-bot span{
+    font-weight: bold;/*字体加粗*/
+    color: #cfcfcf;
+}
+.footer-bot p a{
+    color: #cecccc;
+}
+
+/*banner*/
+.banner{
+    width:1204px;
+    margin:0 auto;
+    overflow: hidden;
+    position: relative;/*相对定位*/
+}
+.banner .banImg{
+    width:4816px;
+}
+.banner li{
+    float: left;
+}
+.bg{
+    position: absolute;
+    left:0;
+    top:0;
+    width:240px;
+    height: 360px;
+    background-color: #000;
+    opacity: 0.3;/*兼容浏览器高版本*/
+    filter:Alpha(opacity=30);/*兼容浏览器低版本*/
+}
+.sub-nav{
+    position: absolute;
+    left:0;
+    top:0;
+    width:240px;
+    height: 360px;
+}
+.sub-nav li{
+    width:240px;
+    height: 72px;
+}
+.sub-nav li>a{
+    margin:0 auto;
+    width:170px;
+    height: 71px;
+    display: block;
+    line-height: 71px;
+    border-bottom:1px solid #f1f1f1\0;
+    *border-bottom:1px solid #f1f1f1;
+    border-bottom: 1px solid rgba(255,255,255,0.44);
+    font-size: 14px;
+    padding:0 9px 0 11px;
+}
+.sub-nav .noBorder{
+    border:none;
+}
+.sub-nav .sub-info{
+    color: #fdfdfe;
+    float: left;
+}
+.sub-nav .ban-icon{
+    float: right;
+    width:7px;
+    height: 13px;
+    color: #fff;
+    font-style: normal;
+    font-size: 18px;
+}
+.sub-nav li:hover .ban-hidden{
+    display: block;
+}
+.sub-nav li:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.ban-hidden{
+    display: none;
+    position: absolute;
+    left:240px;
+    top:0;
+    width:543px;
+    height: 360px;
+    background: url("../img/bg1.jpg") no-repeat;
+    padding:33px 0 0 34px;
+
+}
+.ban-hidden dt{
+    font-size: 16px;
+    color:#0b0b0b;
+    margin-bottom: 19px;
+}
+.ban-hidden dd{
+    font-size:14px;
+    color:#4a4b4b;
+    line-height: 36px;
+}
+.ban-hidden-two{
+    background: url("../img/bg2.jpg") no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
